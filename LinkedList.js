@@ -12,7 +12,7 @@ class SinglyLinkedList {
 		this.tail = null;
 	}
 
-push(value) {
+	push(value) {
 		let newNode = new Node(value);
 		if (!this.head) {
 			this.head = newNode;
@@ -23,7 +23,5 @@ push(value) {
 		}
 		this.length++;
 		return this;
-}
-  
-  
+	}
 }
