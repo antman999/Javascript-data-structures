@@ -100,7 +100,7 @@ class SinglyLinkedList {
 		if (index < 0 || index > this.length) return null;
 
 		if (this.length === index) { !!this.push(value) }
-		if (this.length === 0) { !!this.unshift(value) }
+		if (index === 0) { !!this.unshift(value) }
 		//if the index value is at the end or beginning just push or unshift and return a boolean 
 		let newNode = new Node(value)
 		//Else we create a new node 
@@ -120,5 +120,17 @@ class SinglyLinkedList {
 		return true 
 	}
 
-	
+	remove(index) {
+		if (index < 0 || index > this.length) return null;
+		if (this.length === index) { !!this.pop() }
+		if (0 === index) { !!this.shift() }
+
+		let foundIndex = this.get(index - 1)
+		let indexToRemove = foundIndex.next 
+		foundIndex.next = indexToRemove.next
+		this.length--
+		return indexToRemove
+	}
+
+
 }
