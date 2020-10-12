@@ -9,6 +9,8 @@
 
 ## Why use a singly linked list?
  A - Because it allows for much faster inserts/deletions than an array.
+## When not to use a singly linked list
+ A - When you need random access that is not costly in time / Searching.
 
 ## Differences between a singly linked list and array
 Singly Linked List | Array
@@ -18,3 +20,9 @@ Connected via nodes to the next pointer | insertion and deletion can be expensiv
 Random access is not allowed(must loop) | can be quickly accessed at any index
 
 ## Time complexity of Singly linked list
+Need| Big O
+------------ | -------------
+Insertion | O(1)
+Removal | O(1) or *O(N) worst case*
+Searching | O(N)
+Access | O(N)
