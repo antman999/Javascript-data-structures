@@ -6,4 +6,4 @@
 
 ## Contents
 * [Singly Linked List](https://github.com/antman999/Javascript-data-structures/tree/main/SinglyLinkedList)
-  * Push(), Pop(), Shift(), Unshift(), Get(), Set(), Insert(), Remove()
+  * Push(), Pop(), Shift(), Unshift(), Get(), Set(), Insert(), Remove(), Reverse()
