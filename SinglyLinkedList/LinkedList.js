@@ -66,33 +66,59 @@ class SinglyLinkedList {
 	unshift(val) {
 		let newValue = new Node(val);
 		//add it to the front
-    if (!this.head) {
-      this.push(newValue);
-    } else {
-      newValue.next = this.head;
-      this.head = newValue;
-    }
+		if (!this.head) {
+			this.push(newValue);
+		} else {
+			newValue.next = this.head;
+			this.head = newValue;
+		}
 		this.length++;
 		return this;
-  }
+	}
 
-  get(index) {
-    if (index < 0 || index >= this.length) return null 
-    let counter = 0 
-    let current = this.head 
-    while (counter !== index) {
-      current = current.next 
-      counter ++ 
-    }
-    return current 
-  }
+	get(index) {
+		if (index < 0 || index >= this.length) return null;
+		let counter = 0;
+		let current = this.head;
+		while (counter !== index) {
+			current = current.next;
+			counter++;
+		}
+		return current;
+	}
 
-  set(index, value) {
-    let foundNode = this.get(index)
-    if (foundNode) {
-      foundNode.value = value
-      return true
-    } else
-      return false
-  }
+	set(index, value) {
+		let foundNode = this.get(index);
+		if (foundNode) {
+			foundNode.value = value;
+			return true;
+		} else return false;
+	}
+
+	insert(index, value) {
+		//Insert will insert a new node at a given index rather than replacing it
+		if (index < 0 || index > this.length) return null;
+
+		if (this.length === index) { !!this.push(value) }
+		if (this.length === 0) { !!this.unshift(value) }
+		//if the index value is at the end or beginning just push or unshift and return a boolean 
+		let newNode = new Node(value)
+		//Else we create a new node 
+
+		//[10]-->[4]-->[2344]
+		//we want to insert at the 1 index which is 4
+		let foundIndex = this.get(index - 1)
+		//We find the index before it which is 0th index or 10
+		let temp = foundIndex.next
+		// we place the next of that which is the 1 index or 4
+		foundIndex.next = newNode
+		//Then we insert the new node to the index listed 
+		newNode.next = temp 
+		//and we use the next value to attach the temp value 
+		//[10]-->[1]-->[4]-->[2344]
+		this.length++ 
+		return true 
+	}
+
+	
 }
