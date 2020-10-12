@@ -1,3 +1,5 @@
+const { thisExpression } = require("@babel/types");
+
 class Node {
 	constructor(value) {
 		this.value = value;
@@ -130,6 +132,32 @@ class SinglyLinkedList {
 		foundIndex.next = indexToRemove.next
 		this.length--
 		return indexToRemove
+	}
+
+	reverse() {
+		//Swap head and tail
+		//[100,1000,200,2000,300,3000]
+		let node = this.head;
+		//100
+		this.head = this.tail;
+		//change the head to be tail so 100 is 3000
+		this.tail = node;
+		//change the tail to be 100
+		//now it looks like this
+		//[3000,1000,200,2000,300,100]
+		let next;
+		let previous = null;
+		
+		//start with this
+		//[100, 1000, 200, 2000, 300, 3000];
+		// Node
+		for (let i = 0; i < this.length; i++) {
+			next = node.next; // next is now 1000
+			node.next = previous; //next of 100 is null now
+			previous = node; //previous null will equal 100
+			node = next; // 1000
+		}
+		return this;
 	}
 
 
