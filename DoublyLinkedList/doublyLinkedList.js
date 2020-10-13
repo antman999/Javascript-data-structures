@@ -38,7 +38,8 @@ class DoublyLinkedList {
 			this.tail = null;
 		} else {
 			this.tail = newTail.previous;
-			this.tail = null;
+      this.tail.next = null;
+      newTail.previous = null 
 		}
 		this.length--;
 		return newTail;
