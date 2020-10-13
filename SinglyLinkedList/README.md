@@ -28,3 +28,11 @@ Searching | O(N)
 Access | O(N)
 
 ## ** Bellow is Pseudocode for some of the methods in the file **
+
+### Push()
+> 1. We want to create a new node to give it all the properties it needs. 
+> 2. Before starting we want to check some edge case like if there is no head `(!this.head)` we want to make that node the head and tail. 
+> 3. Otherwise make the next item of the tail `this.tail.next` the new instance of that node
+> 4. Make the tail the new node 
+> 5. We want to increment length and return the list 
+> * We do this because push is just placing it at the end of the list *
