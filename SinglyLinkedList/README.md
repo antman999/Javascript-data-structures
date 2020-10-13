@@ -29,10 +29,25 @@ Access | O(N)
 
 ## ** Bellow is Pseudocode for some of the methods in the file **
 
-### Push()
+### .push()
 > 1. We want to create a new node to give it all the properties it needs. 
 > 2. Before starting we want to check some edge case like if there is no head `(!this.head)` we want to make that node the head and tail. 
 > 3. Otherwise make the next item of the tail `this.tail.next` the new instance of that node
 > 4. Make the tail the new node 
 > 5. We want to increment length and return the list 
-> * We do this because push is just placing it at the end of the list *
+> * *We do this because push is just placing a new node at the end of the list *
+
+### .pop()
+> * **Pop is a bit different since we are removing the last node. So we are removing the tail but there needs to be a new tail. We cant traverse to the previous one so we need to loop all the way to the end -1**
+> 1. This method wont take any arguments.
+> 2. If theres no head return undefined.
+> 3. Lets make a variable as a starting point equal to the head. 
+> 4. And another variable to keep track of the previous one so, make it equal to the last variable `let previous = current`
+> 5. Then we loop until the is no next but keep in mind previous will always be behind current giving us the -1 which is going to be the new tail.
+> 6. Once the loop is done make the tail equal to the 'previous' variable.
+> 7. We make the next of the tail equal to null because it still has a reference to the previous tail.
+> 8. Decrement the length by one.
+> 9. We should be done now but we want to check for a edge case. what if the length was one? we make the head and tail equal to null. 
+> 10. return the previous tail 
+
+
