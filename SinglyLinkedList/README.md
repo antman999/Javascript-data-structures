@@ -26,3 +26,5 @@ Insertion | O(1)
 Removal | O(1) or *O(N) worst case*
 Searching | O(N)
 Access | O(N)
+
+## ** Bellow is Pseudocode for some of the methods in the file **
