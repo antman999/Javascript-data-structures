@@ -1,5 +1,3 @@
-const { thisExpression } = require("@babel/types");
-
 class Node {
 	constructor(value) {
 		this.value = value;

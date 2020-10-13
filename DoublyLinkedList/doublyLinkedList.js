@@ -1,5 +1,3 @@
-const { threadId } = require('worker_threads');
-
 class Node {
 	constructor(value) {
 		this.value = value;
