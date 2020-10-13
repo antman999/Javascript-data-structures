@@ -1,3 +1,5 @@
+const { threadId } = require("worker_threads");
+
 class Node {
 	constructor(value) {
 		this.value = value;
@@ -43,5 +45,23 @@ class DoublyLinkedList {
 		}
 		this.length--;
 		return newTail;
-	}
+  }
+  
+  shift() {
+    if (this.length === 0) return undefined 
+    
+    let olderHead = this.head
+   
+    if (this.length === 1) {
+      this.head = null 
+      this.tail = null
+    } else {
+      this.head = olderHead.next
+      this.head.previous = null 
+      olderHead.next = null 
+    }
+    this.length--; 
+    return olderHead
+  }
+
 }
