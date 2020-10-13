@@ -79,7 +79,7 @@ class DoublyLinkedList {
   }
 
   get(index) {
-    if (index < 0 || index == this.length) return null 
+    if (index < 0 || index > this.length) return null 
     if (index <= this.length / 2) {
       let count = 0
       let current = this.head
@@ -107,6 +107,24 @@ class DoublyLinkedList {
     } else {
       return false 
     }
+  }
+
+  insert(index, value) {
+    if (index < 0 || index > this.length) return false; 
+    if (index === 0) return !!this.unshift(value)
+    if (index === this.length) return !!this.push(value)
+
+    let newValue = new Node(value)
+    let foundNode = this.get(index - 1)
+    let realNode = foundNode.next 
+
+    foundNode.next = newValue
+    newValue.previous = foundNode
+    newValue.next = realNode
+    realNode.previous = newValue
+
+    this.length++ 
+    return true 
   }
 
 
