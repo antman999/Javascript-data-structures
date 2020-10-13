@@ -99,4 +99,15 @@ class DoublyLinkedList {
     }
   }
 
+  set(index, value) {
+    let foundIndex = this.get(index)
+    if (foundIndex) {
+      foundIndex.value = value
+      return true
+    } else {
+      return false 
+    }
+  }
+
+
 }
