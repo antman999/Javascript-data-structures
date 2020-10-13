@@ -11,23 +11,36 @@ class DoublyLinkedList {
 		this.head = null;
 		this.tail = null;
 		this.length = 0;
-  }
-  
-  push(value) {
-    let newNode = new Node(value)
-    if (!this.head) {
-      this.head = newNode
-      this.tail = newNode
-    } else {
-      this.tail.next = newNode
-      newNode.previous = this.tail 
-      this.tail = newNode
+	}
+
+	push(value) {
+		let newNode = new Node(value);
+		if (!this.head) {
+			this.head = newNode;
+			this.tail = newNode;
+		} else {
+			this.tail.next = newNode;
+			newNode.previous = this.tail;
+			this.tail = newNode;
+		}
+		this.length++;
+		return this;
+	}
+
+	pop() {
+		if (!this.head) {
+			return null;
     }
-    this.length++ 
-    return this 
-  }
-  
-
-
+    
+		let newTail = this.tail;
+		if (this.length === 1) {
+			this.head = null;
+			this.tail = null;
+		} else {
+			this.tail = newTail.previous;
+			this.tail = null;
+		}
+		this.length--;
+		return newTail;
+	}
 }
-
