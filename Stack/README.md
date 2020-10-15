@@ -5,7 +5,7 @@
 ## What is a Stack?
 > A "LIFO" data structure, Last In First Out. 
 > The last element added to the stack will be the first element out 
-> Think about a stack of plates, the last one added will be the first cleaned or used
+> Think about a stack of plates, the last one added will be the first cleaned or used.
 
 ## Why use a stack?
  A - Because you can push and pop in constant time.
@@ -28,3 +28,10 @@ Access | O(N)
 > 3. Else create a var that stores the current first property on the stack meaning the last one 
 > 4. Reset the first property to be the new node
 > 5. Set the next property to be the variable and increment length by one   
+
+### .pop()
+> 1. If theres no items in the stack return null 
+> 2. Else create a var that stores the current first property on the stack meaning the last one 
+> 3. if the size is one make the last item null
+> 4. make the first to the next value 
+> 5. return the array and decrement size  
