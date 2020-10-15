@@ -43,7 +43,7 @@ Access | O(N)
 > 2. If theres no head return undefined.
 > 3. Lets make a variable as a starting point equal to the head. 
 > 4. And another variable to keep track of the previous one so, make it equal to the last variable `let previous = current`
-> 5. Then we loop until the is no next but keep in mind previous will always be behind current giving us the -1 which is going to be the new tail.
+> 5. Then we loop until there is no next but keep in mind previous will always be behind current giving us the -1 which is going to be the new tail.
 > 6. Once the loop is done make the tail equal to the 'previous' variable.
 > 7. We make the next of the tail equal to null because it still has a reference to the previous tail.
 > 8. Decrement the length by one.
