@@ -3,28 +3,28 @@
 ![Stack](https://cdn.programiz.com/sites/tutorial2program/files/stack.png)
 
 ## What is a Stack?
-> A data structure that holds information with methods 
-> It contains a head, tail, and each is a node with a total length. 
-> Each node has pointer to the next node which holds a value 
+> A "LIFO" data structure, Last In First Out. 
+> The last element added to the stack will be the first element out 
+> Think about a stack of plates, the last one added will be the first cleaned or used
 
-## Why use a singly linked list?
- A - Because it allows for much faster inserts/deletions than an array.
-## When not to use a singly linked list
- A - When you need random access that is not costly in time / Searching.
+## Why use a stack?
+ A - Because you can push and pop in constant time.
+## When not to use a stack?
+ A - Searching and accessing the contents.
 
-## Differences between a singly linked list and array
-Singly Linked List | Array
------------- | -------------
-No index | Indexed in order
-Connected via nodes to the next pointer | insertion and deletion can be expensive
-Random access is not allowed(must loop) | can be quickly accessed at any index
-
-## Time complexity of Singly linked list
+## Time complexity of Stacks
 Need| Big O
 ------------ | -------------
 Insertion | O(1)
-Removal | O(1) or *O(N) worst case*
+Removal | O(1) 
 Searching | O(N)
 Access | O(N)
 
 ## ** Bellow is Pseudocode for some of the methods in the file **
+
+### .push()
+> 1. We want to create a new node to give it all the properties it needs. 
+> 2. If there are no values `!this.first` set the first and last to newly created node
+> 3. Else create a var that stores the current first property on the stack meaning the last one 
+> 4. Reset the first property to be the new node
+> 5. Set the next property to be the variable and increment length by one   
