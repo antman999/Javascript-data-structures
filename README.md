@@ -10,3 +10,6 @@
 
 * [Doubly Linked List](https://github.com/antman999/Javascript-data-structures/tree/main/DoublyLinkedList)
   * Push(), Pop(), Shift(), Unshift(), Get(), Set(), Insert(), Remove()
+
+* [Stack](https://github.com/antman999/Javascript-data-structures/tree/main/Stack)
+  * Push(), Pop()
