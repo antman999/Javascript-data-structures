@@ -50,4 +50,21 @@ Access | O(N)
 > 9. We should be done now but we want to check for a edge case. what if the length was one? we make the head and tail equal to null. 
 > 10. return the previous tail 
 
+### .shift()
+> 1. If theres no head return undefined.
+> 2. We place the head in a variable `let head = this.head`
+> 3. We make the head the head.next `this.head = head.next`
+> 4. Decrement the length by one 
+> 5. If the length after that is 0 make the tail equal null
+> 6. Return the head
+
+### .unshift()
+> 1. Unshift takes a value and makes it a new node
+> 2. If there is no head just push the node using the method we built
+> 3. Else make the .next of the given node equal to the head
+> 4. Make the head the given new node
+> 5. Increment the length 
+> 6. return the list 
+
+
 
