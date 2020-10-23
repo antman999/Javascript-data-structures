@@ -13,3 +13,5 @@
 
 * [Stack](https://github.com/antman999/Javascript-data-structures/tree/main/Stack)
   * Push(), Pop()
+
+* [Queue](https://github.com/antman999/Javascript-data-structures/tree/main/Queue)
