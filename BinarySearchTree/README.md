@@ -12,6 +12,12 @@
 ## When not to use a Binary Search tree?
  A - If the order is not important or the search tree will not be organized, then you can use a linked list. 
 
+## Things to know about BST.
+* In a bst all numbers to the left are smaller than the parent. All numbers to the right are bigger in value. 
+* Parents at most can have 2 children at most (a smaller and or bigger one.)
+* Searching can be really fast since you can keep chopping off by half since you know values to the left are smaller and right are bigger. 
+
+
 ## Terminology
 Name| Meaning
 ------------ | -------------
