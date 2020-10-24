@@ -20,6 +20,6 @@ Removal | O(1)
 Searching | O(N) Use array
 Access | O(N) Use array
 
-## ** Bellow is Pseudocode for some of the methods in the file **
+## ** Below is Pseudocode for some of the methods in the file **
 
 

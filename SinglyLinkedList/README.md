@@ -27,7 +27,7 @@ Removal | O(1) or *O(N) worst case*
 Searching | O(N)
 Access | O(N)
 
-## ** Bellow is Pseudocode for some of the methods in the file **
+## ** Below is Pseudocode for some of the methods in the file **
 
 ### .push()
 > 1. We want to create a new node to give it all the properties it needs. 
