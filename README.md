@@ -15,3 +15,5 @@
   * Push(), Pop()
 
 * [Queue](https://github.com/antman999/Javascript-data-structures/tree/main/Queue)
+
+* [Binary_search_tree](https://github.com/antman999/Javascript-data-structures/tree/main/BinarySearchTree)
