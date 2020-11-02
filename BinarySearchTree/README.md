@@ -48,7 +48,7 @@ Edge | the connection between one node and another
 6. if theres a right property on the node dequeued add it to the queue 
 7. Return the variable
 
-## Depth First Search or (DFS)
+## 1. Depth First Search or (DFS)
 > This method of traversing a tree takes advantage of searching down the tree. There is many ways to do so but we will cover PreOrder, PostOrder, inOrder. 
 
 ## Depth First PreOrder 
