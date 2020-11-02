@@ -32,3 +32,10 @@ Edge | the connection between one node and another
 
 
 
+# Tree Traversal (BFS) and (DFS)
+
+## Breadth-first search or (BFS)
+> This method of traversing a tree takes advantage of searching across the tree. It will search the siblings the make its way down one and do it again. 
+
+![BFS](https://hackr.io/blog/media/architecture-of-bfs.png)
+
