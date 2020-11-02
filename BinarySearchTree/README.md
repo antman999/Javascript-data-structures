@@ -39,7 +39,7 @@ Edge | the connection between one node and another
 
 ![BFS](https://hackr.io/blog/media/architecture-of-bfs.png)
 
-## Steps BFS
+### Steps BFS
 1. Create a queue(this can be an array) and a variable to store the values of nodes visited.
 2. place the root node in the queue
 3. Loop as long as there is anything in the queue
@@ -56,7 +56,7 @@ Edge | the connection between one node and another
 
 > This method will go down all the way with the left side then work its way back up to the right side.
 
-## Steps DFS- PreOrder
+### Steps DFS- PreOrder
 1. Create a variable to store the values of nodes visited.
 2. Store the root of the BST in a var called current 
 3. Write a helper function which accepts a node.
