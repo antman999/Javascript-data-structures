@@ -55,3 +55,13 @@ Edge | the connection between one node and another
 ![DFSpreOrder](https://khan4019.github.io/front-end-Interview-Questions/images/preorder.jpg)
 
 > This method will go down all the way with the left side then work its way back up to the right side.
+
+## Steps DFS- PreOrder
+1. Create a variable to store the values of nodes visited.
+2. Store the root of the BST in a var called current 
+3. Write a helper function which accepts a node.
+  - Push the values of the node to the var that stores the values.
+  - If the node has a left property, call the helper function with left property on the node. 
+  - If the node has a right property, call the helper function with the right property on the node.
+4. Invoke the helper function with the current var.
+5. Return the array of values.
