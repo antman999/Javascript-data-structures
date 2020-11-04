@@ -67,7 +67,7 @@ Edge | the connection between one node and another
 5. Return the array of values.
 
 
-## 1. Depth First PostOrder
+## 2. Depth First PostOrder
 ![DFSPostOrder](https://www.java2blog.com/wp-content/uploads/2014/07/PostOrderTraversalBinaryTree-1.jpg )
 
 > With postOrder you traverse the entire branch first then add it to the visited. In other words this will go down as much as possible then start adding to our array.
@@ -81,3 +81,7 @@ Edge | the connection between one node and another
   - Push the values of the node to the variable that stores the values.
   - Invoke the helper function with the current value.
 4. Return the array of values. 
+
+## 3. Depth First inOrder 
+![InOrder](https://www.java2blog.com/wp-content/uploads/2014/07/InOrderTraversalBinaryTree-1.jpg )
+
