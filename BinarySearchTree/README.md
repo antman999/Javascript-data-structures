@@ -65,3 +65,19 @@ Edge | the connection between one node and another
   - If the node has a right property, call the helper function with the right property on the node.
 4. Invoke the helper function with the current var.
 5. Return the array of values.
+
+
+## 1. Depth First PostOrder
+![DFSPostOrder](https://www.java2blog.com/wp-content/uploads/2014/07/PostOrderTraversalBinaryTree-1.jpg )
+
+> With postOrder you traverse the entire branch first then add it to the visited. In other words this will go down as much as possible then start adding to our array.
+
+### Steps DFS- PostOrder
+1. Create a var to store the values of nodes visited.
+2. Store the root of the BST in a var called current 
+3. Write a helper function which accepts a node.
+  - If the node has a left property, call the helper function with the left property on the node. 
+  - If the node has a right property, call the helper function with the right property on the node. 
+  - Push the values of the node to the variable that stores the values.
+  - Invoke the helper function with the current value.
+4. Return the array of values. 

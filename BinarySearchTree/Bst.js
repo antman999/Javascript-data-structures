@@ -38,7 +38,7 @@ class BinarySearchTree {
 			}
 		}
 	}
-	bfs() {
+	BFS() {
 		let queue = [];
 		let visited = [];
 		let node;
@@ -50,5 +50,17 @@ class BinarySearchTree {
 			if (node.right) queue.push(node.right);
 		}
 		return visited;
-	}
+  }
+  
+  DFSPreOrder() {
+    let visited = []
+    let current = this.root
+    const helperFunction = node => {
+      visited.push(node)
+      if(node.left) helperFunction(node.left)
+      if (node.right) helperFunction(node.right);
+    }
+    helperFunction(current)
+    return visited
+  }
 }
