@@ -96,3 +96,10 @@ Edge | the connection between one node and another
   - If the node has a right property, call the helper function with the right property on the node. 
   - Invoke the helper function with the current value.
 4. Return the array of values. 
+
+# BFS or DFS??
+ 
+BFS| DFS
+------------ | -------------
+Dont use BFS if the tree is wide you have to visit every single sibling | If the tree is extremely wide use DFS because you can you just visit a given branch.
+Use BFS when trees are narrower| Avoid DFS in this case 
