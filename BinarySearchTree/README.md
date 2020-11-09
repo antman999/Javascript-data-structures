@@ -85,3 +85,14 @@ Edge | the connection between one node and another
 ## 3. Depth First inOrder 
 ![InOrder](https://www.java2blog.com/wp-content/uploads/2014/07/InOrderTraversalBinaryTree-1.jpg )
 
+> With InOrder Our output will be in order. Meaning we are grabbing the lowest value first and working our way up. 
+
+### Steps DFS- inOrder
+1. Create a var to store the values of nodes visited.
+2. Store the root of the BST in a var called current 
+3. Write a helper function which accepts a node.
+  - If the node has a left property, call the helper function with the left property on the node. 
+  - Push the values of the node to the variable that stores the values.
+  - If the node has a right property, call the helper function with the right property on the node. 
+  - Invoke the helper function with the current value.
+4. Return the array of values. 

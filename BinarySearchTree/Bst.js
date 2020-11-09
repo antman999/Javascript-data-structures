@@ -66,14 +66,26 @@ class BinarySearchTree {
 	}
 
 	DFSPostOrder() {
-		let visited = []
-		let current = this.root; 
+		let visited = [];
+		let current = this.root;
 		const helper = node => {
-			if(node.left) helper(node.left)
-			if (node.right) helper(node.right)
-			visited.push(node.value)
-		}
-		helper(current)
-		return visited
+			if (node.left) helper(node.left);
+			if (node.right) helper(node.right);
+			visited.push(node.value);
+		};
+		helper(current);
+		return visited;
+	}
+
+	DFSInOrder() {
+		let visited = [];
+		let current = this.root;
+		const helper = node => {
+			if (node.left) helper(node.left);
+			visited.push(node.value);
+			if (node.right) helper(node.right);
+		};
+		helper(current);
+		return visited;
 	}
 }
