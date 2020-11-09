@@ -79,8 +79,8 @@ Edge | the connection between one node and another
   - If the node has a left property, call the helper function with the left property on the node. 
   - If the node has a right property, call the helper function with the right property on the node. 
   - Push the values of the node to the variable that stores the values.
-  - Invoke the helper function with the current value.
-4. Return the array of values. 
+4. Invoke the helper function with the current value.
+5. Return the array of values. 
 
 ## 3. Depth First inOrder 
 ![InOrder](https://www.java2blog.com/wp-content/uploads/2014/07/InOrderTraversalBinaryTree-1.jpg )
@@ -94,8 +94,8 @@ Edge | the connection between one node and another
   - If the node has a left property, call the helper function with the left property on the node. 
   - Push the values of the node to the variable that stores the values.
   - If the node has a right property, call the helper function with the right property on the node. 
-  - Invoke the helper function with the current value.
-4. Return the array of values. 
+4. Invoke the helper function with the current value.
+5. Return the array of values. 
 
 # BFS or DFS??
  
