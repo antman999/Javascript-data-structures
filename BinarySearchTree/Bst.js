@@ -1,8 +1,8 @@
 class Node {
 	constructor(value) {
 		this.value = value;
-		this.left = left;
-		this.right = right;
+		this.left = null;
+		this.right = null;
 	}
 }
 
@@ -12,24 +12,23 @@ class BinarySearchTree {
 	}
 
 	insert(value) {
-		let newValue = new Node(value);
-
+	 let node = new Node(value);
 		if (!this.root) {
-			this.root = newValue;
-			return this;
+			this.root = node;
+			return this; 
 		} else {
-			var current = this.root;
+		 let current = this.root;
 			while (true) {
-				if (newValue < current.value) {
+				if (current.value > node.value) {
 					if (current.left === null) {
-						current.left = newValue;
+						current.left = node;
 						return this;
 					} else {
 						current = current.left;
 					}
-				} else if (newValue > current.value) {
+				} else if (current.value < node.value) {
 					if (current.right === null) {
-						current.right = newValue;
+						current.right = node;
 						return this;
 					} else {
 						current = current.right;
