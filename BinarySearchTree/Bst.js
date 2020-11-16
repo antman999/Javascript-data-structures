@@ -12,23 +12,22 @@ class BinarySearchTree {
 	}
 
 	insert(value) {
-	 let node = new Node(value);
+		let newNode = new Node(value);
 		if (!this.root) {
-			this.root = node;
-			return this; 
+			this.root = newNode;
 		} else {
-		 let current = this.root;
+			let current = this.root;
 			while (true) {
-				if (current.value > node.value) {
+				if (current.value > newNode.value) {
 					if (current.left === null) {
-						current.left = node;
+						current.left = newNode;
 						return this;
 					} else {
 						current = current.left;
 					}
-				} else if (current.value < node.value) {
+				} else if (current.value < newNode.value) {
 					if (current.right === null) {
-						current.right = node;
+						current.right = newNode;
 						return this;
 					} else {
 						current = current.right;
@@ -36,6 +35,23 @@ class BinarySearchTree {
 				}
 			}
 		}
+	}
+
+	find(value) {
+		if (!this.root) return undefined 
+		let current = this.root
+		let found = false
+		while (current && !found) {
+			if (current.value > value) {
+				current = current.left 
+			} else if (value > current.value) {
+				current = current.right
+			} else {
+				found = true
+			}
+		}
+		if(!found) return undefined
+		return current 
 	}
 
 	BFS() {
