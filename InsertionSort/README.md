@@ -5,8 +5,8 @@
 ## What is an insertion sort?
 > A sorting algorithm which builds up the sort br gradually creating a larger left which is sorted 
 
-## Why use an insertion sort?
- A - 
+## Big O?
+ A - Worst case is O(n^2) since we do have that double loop that will always check if the one before is larger. 
 
 ### Steps for creating an insertion sort
 1. Start by looking at the second element in the array.
