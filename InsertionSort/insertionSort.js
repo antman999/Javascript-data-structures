@@ -11,6 +11,8 @@ const insertionSort = arr => {
   return arr
 };
 
+
+
 /*
 We start with a for loop that will loop through the array. We want to start it at the first index rather 0th since we are going to check if the one before it can be swapped. 
 
