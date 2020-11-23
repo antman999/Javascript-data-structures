@@ -12,5 +12,12 @@ Data Structure|
 [Doubly Linked List](https://github.com/antman999/Javascript-data-structures/tree/main/DoublyLinkedList) | 
 [Stack](https://github.com/antman999/Javascript-data-structures/tree/main/Stack) |
 [Queue](https://github.com/antman999/Javascript-data-structures/tree/main/Queue) | 
-[Binary_search_tree](https://github.com/antman999/Javascript-data-structures/tree/main/BinarySearchTree)|
+[Binary search tree](https://github.com/antman999/Javascript-data-structures/tree/main/BinarySearchTree)|
+
+
+Algorithms| 
+------------ | 
+[Insertion Sort](https://github.com/antman999/Javascript-data-structures/tree/main/InsertionSort) | 
+[Merge Sort](https://github.com/antman999/Javascript-data-structures/tree/main/mergeSort) | 
+[Binary Search](https://github.com/antman999/Javascript-data-structures/tree/main/BinarySearch) |
 
