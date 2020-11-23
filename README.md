@@ -6,18 +6,13 @@
 
 ## Contents
 
-Data Structure| 
------------- | 
-[Singly Linked List](https://github.com/antman999/Javascript-data-structures/tree/main/SinglyLinkedList) | 
+Data Structure| Algorithms
+------------ | ------------
+[Singly Linked List](https://github.com/antman999/Javascript-data-structures/tree/main/SinglyLinkedList) | [Insertion Sort](https://github.com/antman999/Javascript-data-structures/tree/main/InsertionSort)
 [Doubly Linked List](https://github.com/antman999/Javascript-data-structures/tree/main/DoublyLinkedList) | 
+[Merge Sort](https://github.com/antman999/Javascript-data-structures/tree/main/mergeSort)
 [Stack](https://github.com/antman999/Javascript-data-structures/tree/main/Stack) |
+[Binary Search](https://github.com/antman999/Javascript-data-structures/tree/main/BinarySearch)
 [Queue](https://github.com/antman999/Javascript-data-structures/tree/main/Queue) | 
 [Binary search tree](https://github.com/antman999/Javascript-data-structures/tree/main/BinarySearchTree)|
-
-
-Algorithms| 
------------- | 
-[Insertion Sort](https://github.com/antman999/Javascript-data-structures/tree/main/InsertionSort) | 
-[Merge Sort](https://github.com/antman999/Javascript-data-structures/tree/main/mergeSort) | 
-[Binary Search](https://github.com/antman999/Javascript-data-structures/tree/main/BinarySearch) |
 
