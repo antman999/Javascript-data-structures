@@ -38,69 +38,70 @@ class BinarySearchTree {
 	}
 
 	find(value) {
-		if (!this.root) return undefined 
+		if (!this.root) return undefined
 		let current = this.root
 		let found = false
 		while (current && !found) {
 			if (current.value > value) {
-				current = current.left 
+				current = current.left
 			} else if (value > current.value) {
 				current = current.right
 			} else {
 				found = true
 			}
 		}
-		if(!found) return undefined
-		return current 
+		if (!found) return undefined
+		return current
 	}
 
 	BFS() {
-		let queue = [];
+		let queue = [this.root];
 		let visited = [];
 		let node;
-		queue.push(this.root);
 		while (queue.length) {
-			node = queue.shift();
-			visited.push(node);
-			if (node.left) queue.push(node.left);
-			if (node.right) queue.push(node.right);
+			node = queue.shift()
+			visited.push(node)
+			if (node.left) queue.push(node.left)
+			if (node.right) queue.push(node.right)
 		}
-		return visited;
+		return visited
 	}
 
 	DFSPreOrder() {
-		let visited = [];
-		let current = this.root;
-		const helperFunction = node => {
-			visited.push(node);
-			if (node.left) helperFunction(node.left);
-			if (node.right) helperFunction(node.right);
-		};
-		helperFunction(current);
-		return visited;
+		let visited = []
+		let current = this.root
+		const helper = (node) => {
+			visited.push(node)
+			if (node.left) helper(node.left)
+			if (node.right) helper(node.right)
+		}
+		helper(current)
+		return visited
 	}
 
 	DFSPostOrder() {
-		let visited = [];
-		let current = this.root;
-		const helper = node => {
-			if (node.left) helper(node.left);
-			if (node.right) helper(node.right);
-			visited.push(node.value);
-		};
-		helper(current);
-		return visited;
+		let visited = []
+		let current = this.root
+		const helper = (node) => {
+			if (node.left) helper(node.left)
+			if (node.right) helper(node.right)
+			visited.push(node)
+		}
+		helper(current)
+		return visited
 	}
 
 	DFSInOrder() {
-		let visited = [];
-		let current = this.root;
-		const helper = node => {
-			if (node.left) helper(node.left);
-			visited.push(node.value);
-			if (node.right) helper(node.right);
-		};
-		helper(current);
+		let visited = []
+		let current = this.root
+		const helper = (node) => {
+			if (node.left) helper(node.left)
+			visited.push(node)
+			if (node.right) helper(node.right)
+		}
+		helper(current)
 		return visited;
 	}
+
+
 }
