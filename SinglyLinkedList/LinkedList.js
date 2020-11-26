@@ -52,15 +52,12 @@ class SinglyLinkedList {
 	}
 
 	shift() {
-		//We take the current head and remove it
-		if (!this.head) return undefined;
-		let head = this.head;
-		this.head = head.next;
+		if (!this.head) return null 
+		let head = this.head
+		this.head = head.next 
 		this.length--;
-		if (this.length === 0) {
-			this.tail = null;
-		}
-		return head;
+		if (this.length === 0) this.tail = null 
+		return head
 	}
 
 	unshift(val) {
