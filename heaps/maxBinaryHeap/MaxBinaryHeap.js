@@ -46,16 +46,16 @@ class MaxBinaryHeap {
         if (leftChild > element) {
           swap = leftChildIndex
         }
-        if (rightChildIndex < length) {
-         rightChild = this.values[rightChildIndex]
-          if ((swap === null && rightChild > element) || (swap !== null && rightChild > leftChild)) {
-            swap = rightChildIndex
-          }
-        }
-        if (swap === null) break 
-        this.values[index] = this.values[swap]
-        index = swap 
       }
+       if (rightChildIndex < length) {
+         rightChild = this.values[rightChildIndex]
+         if ((swap === null && rightChild > element) || (swap !== null && rightChild > leftChild)) {
+           swap = rightChildIndex
+         }
+       }
+       if (swap === null) break
+       this.values[index] = this.values[swap]
+       index = swap
     }
   }
 
