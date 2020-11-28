@@ -1,6 +1,6 @@
 # Max Binary Heap
 
-![maxbinaryheap](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Max-Heap.svg/1200px-Max-Heap.svg.png)
+![maxbinaryheap](https://miro.medium.com/max/1920/1*jeELUYrAVbZJg6S1E2ujjA.gif)
 
 ## What is a max binary heap?
 > A tree data structure. Unlike a binary search tree theres no order of left(must be less) and right(must be bigger) but at most can have 2 children. The only requirement of a max binary heap is that the biggest number is the parent.
