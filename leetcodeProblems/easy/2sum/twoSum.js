@@ -15,3 +15,5 @@ const twoSum = (nums, target) => {
     }
   }
 }
+
+console.log(twoSum([3, 6, 5, 2, 1, 9], 12))
