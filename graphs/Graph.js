@@ -53,8 +53,8 @@ class Graph {
     let results = []
     let visited = {}
     let vertex;
-    stack.push(start)
-    while (start.length) {
+    stack.push(node)
+    while (node.length) {
       vertex = stack.pop()
       results.push(vertex)
       this.adjacencyList[vertex].forEach(nb => {

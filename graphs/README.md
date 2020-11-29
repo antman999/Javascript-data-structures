@@ -28,7 +28,7 @@
 > Im going to cover the steps for both traversal methods. 
 ![traverse](https://open4tech.com/wp-content/uploads/2019/01/BFS-DFS.png)
 
-### Depth First Search (recursive)
+### 1. Depth First Search (recursive)
 1. Create a function that takes in a starting point from the graph. 
 2. Create a results array this can be empty and will be returned at the end. 
 3. Create a visited object this can be empty. We will use this to mark nodes we have visited like this ``` visited[5] = true ```
@@ -42,3 +42,20 @@
    * In the loop we need to create an if statement to check if we have visited this node before. If not we can call our helper function with that neighbor
 10. Outside the recursive function we can now call it with the starting node. 
 11. return results.
+
+### 2. Depth First Search (iterative)
+>for this Method we will use a stack which is a LIFO structure last in first out. 
+1. First we create a function this will also take a vertex.
+2. Next we can create a stack which can be an empty array. 
+3. Next we can create a results array which we will return at the end. 
+4. Next we also need a visited object which can be empty. 
+5. we can create a node this should just be nothing for now. 
+6. We have to push the node into our stack. 
+7. we need to write a while loop and this loop will run until the stack has any length. 
+8. next in the node var we need to pop off the the value of the stack.
+9. and push it into the results array. 
+10. Next we need to find its sibling we do so by looping with a for each loop of our list ``` this.adjacencyList[vertex] ``` and once again ask
+  * if the value is not in the visited object lets add it to visited and equal it to true. 
+  * Push the value of that sibling into the stack. 
+11. Return the results. 
+
