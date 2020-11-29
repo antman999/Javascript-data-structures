@@ -48,4 +48,23 @@ class Graph {
     return visited
   }
 
+  DFSIterative(node) {
+    let stack = []
+    let results = []
+    let visited = {}
+    let vertex;
+    stack.push(start)
+    while (start.length) {
+      vertex = stack.pop()
+      results.push(vertex)
+      this.adjacencyList[vertex].forEach(nb => {
+        if (!visited[nb]) {
+          visited[nb] = true
+          stack.push(nb)
+        }
+      })
+    }
+    return results 
+  }
+
 }
