@@ -18,5 +18,12 @@
 2. An unweighted graph doesn't have them.
 ![graphCp](https://www.bogotobogo.com/python/images/Graph/graph_diagram.png)  
 
-## Terminology
+## How do we store a graph? 
+1. We can store in rows and columns called adjancency matrix or in an array adjancency list 
+> For most of the methods we will build we will use a list to model it. 
+![types](https://www.researchgate.net/profile/Anirban_Mitra11/publication/272172339/figure/fig1/AS:392001062227980@1470471744830/Fig-3-i-Digraph-G-ii-Adjacency-Matrix-of-G-iii-Adjacency-List-of-G-Considering-an.png)
 
+## Traversing a graph
+> like a binary search tree which is also a graph we can traverse the graph using depth first (DFS) and breadth first search (BFS). 
+> Im going to cover the steps for both traversal methods. 
+![traverse](https://open4tech.com/wp-content/uploads/2019/01/BFS-DFS.png)
