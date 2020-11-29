@@ -27,3 +27,18 @@
 > like a binary search tree which is also a graph we can traverse the graph using depth first (DFS) and breadth first search (BFS). 
 > Im going to cover the steps for both traversal methods. 
 ![traverse](https://open4tech.com/wp-content/uploads/2019/01/BFS-DFS.png)
+
+### Depth First Search (recursive)
+1. Create a function that takes in a starting point from the graph. 
+2. Create a results array this can be empty and will be returned at the end. 
+3. Create a visited object this can be empty. We will use this to mark nodes we have visited like this ``` visited[5] = true ```
+4. Create a variable called list or adjacencyList and set this to ``` this.adjacencyList``` this is because in our recursive function we wont have the same output of the keyword ``` This ```.
+5. Next we can write our traverse function and this will take a vertex. 
+6.  -Base case- If the vertex is null return null. 
+7. Now we can set our vertex in the object visited to true. 
+8. we can push the vertex into our results array. 
+9. We need to find the children so we need to write a foreach loop
+   * We need to loop thru our list we created earlier ``` list[vertex] ```.
+   * In the loop we need to create an if statement to check if we have visited this node before. If not we can call our helper function with that neighbor
+10. Outside the recursive function we can now call it with the starting node. 
+11. return results.

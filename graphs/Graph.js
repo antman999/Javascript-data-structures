@@ -45,7 +45,7 @@ class Graph {
       });
     }
     helper(node);
-    return visited
+    return results
   }
 
   DFSIterative(node) {
