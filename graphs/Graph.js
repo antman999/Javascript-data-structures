@@ -1,6 +1,4 @@
-const { array } = require("yargs");
-
-class Graph{
+class Graph {
   constructor() {
     this.adjacencyList = {};
   }
@@ -9,7 +7,7 @@ class Graph{
     this.adjacencyList[key] = [];
   }
 
-  addEdge(v1,v2) {
+  addEdge(v1, v2) {
     if (this.adjacencyList[v1]) {
       this.adjacencyList[v1].push(v2)
     }
@@ -29,6 +27,25 @@ class Graph{
       this.removeEdge(vertex, adjacencyVertex)
     }
     delete this.adjacencyList[vertex]
+  }
+
+  //Graph traversal 
+
+  DFSRecursive(node) {
+    let results = [];
+    let visited = {};
+    const adjacencyList = this.adjacencyList
+
+    const helper = vertex => {
+      if (vertex === null) return null
+      visited[vertex] = true
+      results.push(vertex)
+      adjacencyList[vertex].forEach(next => {
+        if (!visited[next]) return helper(next)
+      });
+    }
+    helper(node);
+    return visited
   }
 
 }
